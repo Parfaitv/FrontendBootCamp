@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "parfaitv",
+    "password": "root",
+    "database": "chapter2",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "parfaitv",
+    "password": "root",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "parfaitv",
+    "password": "root",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
