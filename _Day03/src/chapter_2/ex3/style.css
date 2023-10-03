@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.studentBody {
+    background-color:#0cf5e9;
+}
+
+.containerCalc {
+    background-color:#0cf5e9;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    font-size: 25px;
+    color: azure;
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    width: 250px;
+    height: 600px;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.output {
+    display: grid;
+    grid-template-columns: 75% 25% ;
+}
+
+.output .result {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1px 1px;
+    padding: 15px 12px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+.output .clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px 1px;
+    padding: 22px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: red;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    grid-template-rows: 25% 25% 25% 25%;
+    border-radius: 3px;
+}
+
+.inputs input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 10px;
+    margin: 1px 1px;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.522);
+}
