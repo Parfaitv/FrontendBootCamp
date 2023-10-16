@@ -2,14 +2,7 @@ import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap'
 import styles from './mystyle.module.css';
 
-const PokemonList = ({ cardArray, setCardArray }) => {
-
-    const removePokemon = (index) => {
-        const filterArray = cardArray.filter((pokemon, i) => i !== index)
-        console.log(filterArray);
-        setCardArray(filterArray)
-    }
-
+const PokemonList = ({ cardArray, removePokemon }) => {
     return (
         cardArray.map((pokemonInfo, i) => (
             <div key={i} className='d-flex justify-content-between align-items-center m-5'>
@@ -25,7 +18,6 @@ const PokemonList = ({ cardArray, setCardArray }) => {
                         ))}
                     </ListGroup>
                 </Card>
-
                 <span
                     className={`material-symbols-outlined ${styles.deleted}`}
                     onClick={() => removePokemon(i)}
@@ -37,4 +29,4 @@ const PokemonList = ({ cardArray, setCardArray }) => {
     )
 }
 
-export default PokemonList
+export default React.memo(PokemonList)
